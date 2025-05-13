@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Gestor de libros"/>
+        <attribute name="authors" value="Equipo 27"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-13 12:07:06 p.&#160;m."/>
+        <attribute name="created" value="RXF1aXBvIDI3O0RFU0tUT1AtSklEOFFBTjsyMDI1LTA0LTI5OzA5OjEzOjE2IGEuwqBtLjszNDMx"/>
+        <attribute name="edited" value="RXF1aXBvIDI3O0RFU0tUT1AtSklEOFFBTjsyMDI1LTA1LTA3OzAxOjEzOjE4IHAuwqBtLjs0OzM1NDg="/>
+        <attribute name="edited" value="VXN1YXJpbyAwNztMQVBUT1AtS1YxMFFJRVU7MjAyNS0wNS0xMzsxMjowNzowNiBwLsKgbS47MzszNjU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcion" type="Integer" array="False" size=""/>
+            <declare name="salir" type="Integer" array="False" size=""/>
+            <assign variable="salir" expression="0"/>
+            <output expression="&quot;&#161;Hola!, Se bienvenido a el mejor gestor de VIDEOS DE YOUTUBERS GODS&quot;" newline="True"/>
+            <while expression="salir!=1">
+                <output expression="&quot; Que tipo de youtuber prefieres 1- GOLD ERA (ESPA&#209;A) , 2- NASHE ERA (ARGENTINA), 3- ACTUAL ERA (2020-2025), 4- TOCOMPLE ERA (CHILE)&quot;" newline="True"/>
+                <input variable="opcion"/>
+                <while expression="not((opcion&gt;=1)and(opcion&lt;=4))">
+                    <output expression="&quot;ingresaste una opcion incorrecta, verifica tu opcion y reingresa tu numero&quot;" newline="True"/>
+                    <output expression="&quot;Que tipo de youtuber prefieres 1- GOLD ERA (ESPA&#209;A) , 2- NASHE ERA (ARGENTINA), 3- ACTUAL ERA (2020-2025), 4- TOCOMPLE ERA (CHILE)&quot;" newline="True"/>
+                    <input variable="opcion"/>
+                </while>
+                <if expression="opcion=1">
+                    <then>
+                        <call expression="espa&#241;a"/>
+                    </then>
+                    <else>
+                        <if expression="opcion=2">
+                            <then>
+                                <call expression="arg"/>
+                            </then>
+                            <else>
+                                <if expression="opcion=3">
+                                    <then>
+                                        <call expression="dante"/>
+                                    </then>
+                                    <else>
+                                        <call expression="auto"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;&#191;quieres terminar el programa?, Presione 1 para terminarlo, presione cualquier otro numero si quiere seguir&quot;" newline="True"/>
+                <input variable="salir"/>
+            </while>
+            <output expression="&quot;gracias por utilizar mi gestor de libros, hasta luego&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="chile" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="autoauto, recienteauto" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
+            <output expression="&quot;Paulo Coelho(1), James Allen(2), Viktor Frankl(3)&quot;" newline="True"/>
+            <input variable="autoauto"/>
+            <while expression="not((autoauto&gt;=1)and(autoauto&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Paulo Coelho(1), James Allen(2), Viktor Frankl(3)&quot;" newline="True"/>
+                <input variable="autoauto"/>
+            </while>
+            <if expression="autoauto=1">
+                <then>
+                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                    <input variable="recienteauto"/>
+                    <if expression="recienteauto=1">
+                        <then>
+                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;El arquero(2020), La espia(2016), El manuscrito encontrado en Accra(2012)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;Maktub(1994), Veronika decide morir(1998), El alquimista(1988)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="autoauto=2">
+                        <then>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recienteauto"/>
+                            <if expression="recienteauto=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Los ochos pilares de la prosperidad(1911), Be your own sunshine(1913), The mastery of destiny(1909)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Como un hombre piensa(1902), El camino de la prosperidad(1901), As you think(1903)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recienteauto"/>
+                            <if expression="recienteauto=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Logoterapia y analisis existencial(1987), Psicoterapia y humanismo(1978), La presencia ignorada de dios(1977)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;El hombre en busca de sentido(1946), La voluntad de sentido(1967), En el principio era el sentido(1946)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="arg" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="autoc, recientec" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
+            <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
+            <input variable="autoc"/>
+            <while expression="not((autoc&gt;=1)and(autoc&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
+                <input variable="autoc"/>
+            </while>
+            <if expression="autoc=1">
+                <then>
+                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                    <input variable="recientec"/>
+                    <if expression="recientec=1">
+                        <then>
+                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;sue&#241;os de robot(1986), Preludio a la fundacion(1988), los propios dioses(1972)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;Yo, robot(1950), Fundacion(1951), El fin de la eternidad(1955)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="autoc=2">
+                        <then>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recientec"/>
+                            <if expression="recientec=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;R is for rocket(1960), Death is a lonely business(1980), El dragon(1955)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Fahrenheit 451(1953), Cronicas marcianas(1950), El hombre ilustrado(1951)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recientec"/>
+                            <if expression="recientec=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Robur el conquistador(1886), La jangada(1881), el rayo verde (1882)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Viaje al centro de la tierra(1864), Veinte mil leguas de viaje submarino(1870), La vuelta al mundo en ochenta dias(1872)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="act" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="autof, recientef" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
+            <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
+            <input variable="autof"/>
+            <while expression="not((autof&gt;=1)and(autof&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
+                <input variable="autof"/>
+            </while>
+            <if expression="autof=1">
+                <then>
+                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                    <input variable="recientef"/>
+                    <if expression="recientef=1">
+                        <then>
+                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;The guest(1957), El verano(1950), El hombre Rebelde(1951)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;El extranjero (1942), El mito de sisifo(1942), La peste(1947)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="autof=2">
+                        <then>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recientef"/>
+                            <if expression="recientef=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Pulp(1994), Musica de Ca&#241;erias (1983), La senda del perdedor(1982)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Cartero(1971), Mujeres(1978), Factotum(1975)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="recientef"/>
+                            <if expression="recientef=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;El principe(1532), Belfagor Arcidiavolo (1549)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Del arte de la guerra(1521)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="espa&#241;a" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="autom" type="Integer" array="False" size=""/>
+            <declare name="reciente" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;De cual youtuber espa&#241;ol prefieres el video?&quot;" newline="True"/>
+            <output expression="&quot;*1* Vegetta777, *2* Willyrex, *3* ByStaxx&quot;" newline="True"/>
+            <input variable="autom"/>
+            <while expression="not((autom&gt;=1)and(autom&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Edgar allan poe (1), H.P Lovecraft (2), Stephen King (3)&quot;" newline="True"/>
+                <input variable="autom"/>
+            </while>
+            <if expression="autom=1">
+                <then>
+                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingresze un *2*&quot;" newline="True"/>
+                    <input variable="reciente"/>
+                    <if expression="reciente=1">
+                        <then>
+                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;Eureka(1848), El Cuervo(1845), Narraciones Extraordinarias (1845)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;La mascara de la muerte Roja(1842), el gato negro (1843), El corazon delator(1843)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="autom=2">
+                        <then>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="reciente"/>
+                            <if expression="reciente=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;La b&#250;squeda en sue&#241;os de la ignota Kadath(1943), Azathoth (1938), A trav&#233;s de las puertas de la llave de plata(1934)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Dagon(1919), La llamada de cthulhu(1928), El horror de Dunwich(1929)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <input variable="reciente"/>
+                            <if expression="reciente=1">
+                                <then>
+                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Te gusta m&#225;s oscuro(2024), Edici&#243;n de bolsillo de Holly(2024), Christine Edici&#243;n de bolsillo(2024)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Carrie(1974), IT(1986), El resplandor (1977)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
