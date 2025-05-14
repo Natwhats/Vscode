@@ -4,10 +4,10 @@
         <attribute name="name" value="Gestor de libros"/>
         <attribute name="authors" value="Equipo 27"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-05-13 12:07:06 p.&#160;m."/>
+        <attribute name="saved" value="2025-05-14 01:42:18 p.&#160;m."/>
         <attribute name="created" value="RXF1aXBvIDI3O0RFU0tUT1AtSklEOFFBTjsyMDI1LTA0LTI5OzA5OjEzOjE2IGEuwqBtLjszNDMx"/>
         <attribute name="edited" value="RXF1aXBvIDI3O0RFU0tUT1AtSklEOFFBTjsyMDI1LTA1LTA3OzAxOjEzOjE4IHAuwqBtLjs0OzM1NDg="/>
-        <attribute name="edited" value="VXN1YXJpbyAwNztMQVBUT1AtS1YxMFFJRVU7MjAyNS0wNS0xMzsxMjowNzowNiBwLsKgbS47MzszNjU4"/>
+        <attribute name="edited" value="VXN1YXJpbyAwNztMQVBUT1AtS1YxMFFJRVU7MjAyNS0wNS0xNDswMTo0MjoxOCBwLsKgbS47NTszNjYx"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,6 +16,7 @@
             <declare name="salir" type="Integer" array="False" size=""/>
             <assign variable="salir" expression="0"/>
             <output expression="&quot;&#161;Hola!, Se bienvenido a el mejor gestor de VIDEOS DE YOUTUBERS GODS&quot;" newline="True"/>
+            <output expression="&quot;Para empezar te realizar&#233; algunas preguntas&quot;" newline="True"/>
             <while expression="salir!=1">
                 <output expression="&quot; Que tipo de youtuber prefieres 1- GOLD ERA (ESPA&#209;A) , 2- NASHE ERA (ARGENTINA), 3- ACTUAL ERA (2020-2025), 4- TOCOMPLE ERA (CHILE)&quot;" newline="True"/>
                 <input variable="opcion"/>
@@ -36,20 +37,144 @@
                             <else>
                                 <if expression="opcion=3">
                                     <then>
-                                        <call expression="dante"/>
+                                        <call expression="act"/>
                                     </then>
                                     <else>
-                                        <call expression="auto"/>
+                                        <call expression="chile"/>
                                     </else>
                                 </if>
                             </else>
                         </if>
                     </else>
                 </if>
-                <output expression="&quot;&#191;quieres terminar el programa?, Presione 1 para terminarlo, presione cualquier otro numero si quiere seguir&quot;" newline="True"/>
+                <output expression="&quot;&#191;Desea finalizar el programa?, si desea finalizarlo ingrese *1*, si no es el caso y desea continuar ingrese *2*&quot;" newline="True"/>
                 <input variable="salir"/>
             </while>
-            <output expression="&quot;gracias por utilizar mi gestor de libros, hasta luego&quot;" newline="True"/>
+            <output expression="&quot;Gestor de Videos GODS te da las gracias por utilizar este programa &#55357;&#56396;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="act" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="famosoACT, qwer" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
+            <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
+            <input variable="qwer"/>
+            <while expression="not((qwer&gt;=1)and(qwer&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
+                <input variable="autof"/>
+            </while>
+            <if expression="qwer=1">
+                <then>
+                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                    <input variable="famosoACT"/>
+                    <if expression="famosoACT=1">
+                        <then>
+                            <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                            <output expression="&quot;The guest(1957), El verano(1950), El hombre Rebelde(1951)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;El extranjero (1942), El mito de sisifo(1942), La peste(1947)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="qwer=2">
+                        <then>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="famosoACT"/>
+                            <if expression="famosoACT=1">
+                                <then>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;Pulp(1994), Musica de Ca&#241;erias (1983), La senda del perdedor(1982)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Cartero(1971), Mujeres(1978), Factotum(1975)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="famosoACT"/>
+                            <if expression="famosoACT=1">
+                                <then>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;El principe(1532), Belfagor Arcidiavolo (1549)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Del arte de la guerra(1521)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="arg" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qwer, recientec" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
+            <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
+            <input variable="qwer"/>
+            <while expression="not((qwer&gt;=1)and(qwer&lt;=3))">
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
+                <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
+                <input variable="autoc"/>
+            </while>
+            <if expression="qwer=1">
+                <then>
+                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                    <input variable="recientec"/>
+                    <if expression="recientec=1">
+                        <then>
+                            <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                            <output expression="&quot;sue&#241;os de robot(1986), Preludio a la fundacion(1988), los propios dioses(1972)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;Yo, robot(1950), Fundacion(1951), El fin de la eternidad(1955)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="qwer=2">
+                        <then>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="recientec"/>
+                            <if expression="recientec=1">
+                                <then>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;R is for rocket(1960), Death is a lonely business(1980), El dragon(1955)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Fahrenheit 451(1953), Cronicas marcianas(1950), El hombre ilustrado(1951)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="recientec"/>
+                            <if expression="recientec=1">
+                                <then>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;Robur el conquistador(1886), La jangada(1881), el rayo verde (1882)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;Viaje al centro de la tierra(1864), Veinte mil leguas de viaje submarino(1870), La vuelta al mundo en ochenta dias(1872)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
         </body>
     </function>
     <function name="chile" type="None" variable="">
@@ -66,11 +191,11 @@
             </while>
             <if expression="autoauto=1">
                 <then>
-                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
                     <input variable="recienteauto"/>
                     <if expression="recienteauto=1">
                         <then>
-                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                            <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
                             <output expression="&quot;El arquero(2020), La espia(2016), El manuscrito encontrado en Accra(2012)&quot;" newline="True"/>
                         </then>
                         <else>
@@ -82,11 +207,11 @@
                 <else>
                     <if expression="autoauto=2">
                         <then>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
                             <input variable="recienteauto"/>
                             <if expression="recienteauto=1">
                                 <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
                                     <output expression="&quot;Los ochos pilares de la prosperidad(1911), Be your own sunshine(1913), The mastery of destiny(1909)&quot;" newline="True"/>
                                 </then>
                                 <else>
@@ -96,11 +221,11 @@
                             </if>
                         </then>
                         <else>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
                             <input variable="recienteauto"/>
                             <if expression="recienteauto=1">
                                 <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
                                     <output expression="&quot;Logoterapia y analisis existencial(1987), Psicoterapia y humanismo(1978), La presencia ignorada de dios(1977)&quot;" newline="True"/>
                                 </then>
                                 <else>
@@ -114,187 +239,68 @@
             </if>
         </body>
     </function>
-    <function name="arg" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="autoc, recientec" type="Integer" array="False" size=""/>
-            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
-            <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
-            <input variable="autoc"/>
-            <while expression="not((autoc&gt;=1)and(autoc&lt;=3))">
-                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
-                <output expression="&quot;Isaac Asimov(1), Ray Bradbury(2), Julio Verne(3)&quot;" newline="True"/>
-                <input variable="autoc"/>
-            </while>
-            <if expression="autoc=1">
-                <then>
-                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                    <input variable="recientec"/>
-                    <if expression="recientec=1">
-                        <then>
-                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;sue&#241;os de robot(1986), Preludio a la fundacion(1988), los propios dioses(1972)&quot;" newline="True"/>
-                        </then>
-                        <else>
-                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;Yo, robot(1950), Fundacion(1951), El fin de la eternidad(1955)&quot;" newline="True"/>
-                        </else>
-                    </if>
-                </then>
-                <else>
-                    <if expression="autoc=2">
-                        <then>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="recientec"/>
-                            <if expression="recientec=1">
-                                <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;R is for rocket(1960), Death is a lonely business(1980), El dragon(1955)&quot;" newline="True"/>
-                                </then>
-                                <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Fahrenheit 451(1953), Cronicas marcianas(1950), El hombre ilustrado(1951)&quot;" newline="True"/>
-                                </else>
-                            </if>
-                        </then>
-                        <else>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="recientec"/>
-                            <if expression="recientec=1">
-                                <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Robur el conquistador(1886), La jangada(1881), el rayo verde (1882)&quot;" newline="True"/>
-                                </then>
-                                <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Viaje al centro de la tierra(1864), Veinte mil leguas de viaje submarino(1870), La vuelta al mundo en ochenta dias(1872)&quot;" newline="True"/>
-                                </else>
-                            </if>
-                        </else>
-                    </if>
-                </else>
-            </if>
-        </body>
-    </function>
-    <function name="act" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="autof, recientef" type="Integer" array="False" size=""/>
-            <output expression="&quot;&#191;de que autor te gustaria ver libros?, ingrese el numero al lado del autor para ver sus libros&quot;" newline="True"/>
-            <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
-            <input variable="autof"/>
-            <while expression="not((autof&gt;=1)and(autof&lt;=3))">
-                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
-                <output expression="&quot;Albert Camus(1), Charles Bukowski(2), Nicolas Maquiavelo(3)&quot;" newline="True"/>
-                <input variable="autof"/>
-            </while>
-            <if expression="autof=1">
-                <then>
-                    <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no?, ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                    <input variable="recientef"/>
-                    <if expression="recientef=1">
-                        <then>
-                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;The guest(1957), El verano(1950), El hombre Rebelde(1951)&quot;" newline="True"/>
-                        </then>
-                        <else>
-                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;El extranjero (1942), El mito de sisifo(1942), La peste(1947)&quot;" newline="True"/>
-                        </else>
-                    </if>
-                </then>
-                <else>
-                    <if expression="autof=2">
-                        <then>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="recientef"/>
-                            <if expression="recientef=1">
-                                <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Pulp(1994), Musica de Ca&#241;erias (1983), La senda del perdedor(1982)&quot;" newline="True"/>
-                                </then>
-                                <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Cartero(1971), Mujeres(1978), Factotum(1975)&quot;" newline="True"/>
-                                </else>
-                            </if>
-                        </then>
-                        <else>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="recientef"/>
-                            <if expression="recientef=1">
-                                <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;El principe(1532), Belfagor Arcidiavolo (1549)&quot;" newline="True"/>
-                                </then>
-                                <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Del arte de la guerra(1521)&quot;" newline="True"/>
-                                </else>
-                            </if>
-                        </else>
-                    </if>
-                </else>
-            </if>
-        </body>
-    </function>
     <function name="espa&#241;a" type="None" variable="">
         <parameters/>
         <body>
             <declare name="autom" type="Integer" array="False" size=""/>
-            <declare name="reciente" type="Integer" array="False" size=""/>
+            <declare name="famoso" type="Integer" array="False" size=""/>
             <output expression="&quot;&#191;De cual youtuber espa&#241;ol prefieres el video?&quot;" newline="True"/>
             <output expression="&quot;*1* Vegetta777, *2* Willyrex, *3* ByStaxx&quot;" newline="True"/>
             <input variable="autom"/>
             <while expression="not((autom&gt;=1)and(autom&lt;=3))">
-                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar&quot;" newline="True"/>
-                <output expression="&quot;Edgar allan poe (1), H.P Lovecraft (2), Stephen King (3)&quot;" newline="True"/>
+                <output expression="&quot;la opcion ingresada ha sido incorrecta, vuelva a ingresar su opcion&quot;" newline="True"/>
+                <output expression="&quot;*1* Vegetta777, *2* Willyrex, *3* ByStaxx&quot;" newline="True"/>
                 <input variable="autom"/>
             </while>
             <if expression="autom=1">
                 <then>
-                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingresze un *2*&quot;" newline="True"/>
-                    <input variable="reciente"/>
-                    <if expression="reciente=1">
+                    <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                    <input variable="famoso"/>
+                    <if expression="famoso=1">
                         <then>
-                            <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;Eureka(1848), El Cuervo(1845), Narraciones Extraordinarias (1845)&quot;" newline="True"/>
+                            <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                            <output expression="&quot;PLANETA VEGETTA UNA GRAN AVENTURA NOS ESPERA 1   /   GTAV ONLINE CARRERAS ENTRE AMIGOS - ENEMIGOS   /   ESPECIAL 7777 - MINECRAFT EL GRAN COMBATE&quot;" newline="True"/>
+                            <output expression="&quot;Ten en cuenta que es el titulo de los videos&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                            <output expression="&quot;La mascara de la muerte Roja(1842), el gato negro (1843), El corazon delator(1843)&quot;" newline="True"/>
+                            <output expression="&quot;los videos no tan famosos del youtuber escogido son:&quot;" newline="True"/>
+                            <output expression="&quot;KARMALAND - LA MUERTE ESTA CERCA! #75   /    ESCAPA DE LA BESTIA #2 | OLIMPOCRAFT - Minecraft    /    GTA V ONLINE: EL COCHE MAS DURO DE LA HISTORIA&quot;" newline="True"/>
+                            <output expression="&quot;Ten en cuenta que es el titulo de los videos&quot;" newline="True"/>
                         </else>
                     </if>
                 </then>
                 <else>
                     <if expression="autom=2">
                         <then>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="reciente"/>
-                            <if expression="reciente=1">
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="famoso"/>
+                            <if expression="famoso=1">
                                 <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;La b&#250;squeda en sue&#241;os de la ignota Kadath(1943), Azathoth (1938), A trav&#233;s de las puertas de la llave de plata(1934)&quot;" newline="True"/>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;GTA V ONLINE | NUEVO COCHE 2.500.000$ !! #216 - GTA 5 Gameplay   /   TOP 200 FAILS M&#193;S DIVERTIDOS de FORTNITE: Battle Royale   /   LO QUE NUNCA TE OCURRIR&#193; EN FORTNITE! FAILS | Reaccionando&quot;" newline="True"/>
+                                    <output expression="&quot;Ten en cuenta que es el titulo de los videos&quot;" newline="True"/>
                                 </then>
                                 <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Dagon(1919), La llamada de cthulhu(1928), El horror de Dunwich(1929)&quot;" newline="True"/>
+                                    <output expression="&quot;los videos no tan famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;USO TODAS LAS ARMAS EN LA MISMA PARTIDA! FORTNITE   /   GTA V: ZENTORNOS VS CORREDORES   /   GANCHO VS GANCHO en FORTNITE!! Reaccionando&quot;" newline="True"/>
+                                    <output expression="&quot;Ten en cuenta que es el titulo de los videos&quot;" newline="True"/>
                                 </else>
                             </if>
                         </then>
                         <else>
-                            <output expression="&quot;&#191;quieres que sea el libro mas reciente del autor o no? ingrese 1 para si, cualquier otro numero para no&quot;" newline="True"/>
-                            <input variable="reciente"/>
-                            <if expression="reciente=1">
+                            <output expression="&quot;&#191;Desea un video Famoso o no tan famoso?, ingrese *1* si desea un video Famoso, si no es el caso ingrese un *2*&quot;" newline="True"/>
+                            <input variable="famoso"/>
+                            <if expression="famoso=1">
                                 <then>
-                                    <output expression="&quot;los libros mas recientes del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Te gusta m&#225;s oscuro(2024), Edici&#243;n de bolsillo de Holly(2024), Christine Edici&#243;n de bolsillo(2024)&quot;" newline="True"/>
+                                    <output expression="&quot;los tres videos mas famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;CUIDADO CON LOS ZOMBIS - Willyrex Y sTaXx - MINECRAFT MOD - LEFT 4 DEAD 2   /   ICE BUCKET CHALLENGE | sTaXx Y Luzo    /    BORRACHOS, FUMADOS Y DE FIESTA!! - GTA 5 ONLINE&quot;" newline="True"/>
                                 </then>
                                 <else>
-                                    <output expression="&quot;los libros del autor serian:&quot;" newline="True"/>
-                                    <output expression="&quot;Carrie(1974), IT(1986), El resplandor (1977)&quot;" newline="True"/>
+                                    <output expression="&quot;los videos no tan famosos del youtuber escogido son:&quot;" newline="True"/>
+                                    <output expression="&quot;NO CONFIES EN MI!! - c/ VEGETTA - ESCAPA DE LA BESTIA #3 - MINECRAFT   /     LUCKY BLOCKS VERDES!! - Willyrex vs sTaXx - Carrera &#233;pica Lucky Blocks   /   EL FIN DE KARMALAND - KARMALAND - Episodio 65&quot;" newline="True"/>
                                 </else>
                             </if>
+                            <output expression="&quot;Ten en cuenta que es el titulo de los videos&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
