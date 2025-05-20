@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SistemaPromediosEstudiantiles_Corregido"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-20 09:27:11 a.&#160;m."/>
+        <attribute name="created" value="VXN1YXJpbyAwNztMQVBUT1AtS1YxMFFJRVU7MjAyNS0wNS0yMDswODo1ODoxNSBhLsKgbS47MzU0Mg=="/>
+        <attribute name="edited" value="VXN1YXJpbyAwNztMQVBUT1AtS1YxMFFJRVU7MjAyNS0wNS0yMDswOToyNzoxMSBhLsKgbS47MjszNjQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numEstudiantes, i, j, cantidadNotas, sumaTotalPromedios" type="Integer" array="False" size=""/>
+            <declare name="promedioEstudiante" type="Real" array="False" size=""/>
+            <declare name="asignatura" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese la cantidad de estudiantes:&quot;" newline="True"/>
+            <input variable="numEstudiantes"/>
+            <output expression="&quot;Ingrese el nombre de la asignatura:&quot;" newline="True"/>
+            <input variable="asignatura"/>
+            <declare name="nombresEstudiantes" type="String" array="True" size="numEstudiantes"/>
+            <for variable="i" start="1" end="numEstudiantes" direction="inc" step="1">
+                <output expression="&quot;Ingrese el nombre del estudiante &quot;" newline="True"/>
+                <input variable="nombresEstudiantes[i - 1]"/>
+            </for>
+            <assign variable="sumaTotalPromedios" expression="0"/>
+            <for variable="j" start="1" end="cantidadNotas" direction="inc" step="1">
+                <output expression="&quot;Ingrese la cantidad de notas para &quot; + nombresEstudiantes[i - 1] + &quot;:&quot;" newline="True"/>
+                <input variable="cantidadNotas"/>
+                <declare name="notasEstudiante" type="Real" array="True" size="cantidadNotas"/>
+                <for variable="j" start="1" end="cantidadNotas" direction="inc" step="1">
+                    <output expression="&quot;Ingrese la nota &quot; + j + &quot; para &quot; + nombresEstudiantes[i - 1] + &quot;:&quot;" newline="True"/>
+                    <input variable="notasEstudiante[j - 1]"/>
+                </for>
+                <assign variable="promedioEstudiante" expression="calcularPromedio(notasEstudiante, cantidadNotas)"/>
+                <output expression="&quot;Promedio de &quot; + nombresEstudiantes[i - 1] + &quot;: &quot; + promedioEstudiante" newline="True"/>
+                <assign variable="sumaTotalPromedios" expression="sumaTotalPromedios + promedioEstudiante"/>
+            </for>
+            <output expression="&quot;Promedio general de la asignatura &quot; + asignatura + &quot;: &quot; + (sumaTotalPromedios / numEstudiantes)" newline="True"/>
+        </body>
+    </function>
+    <function name="calcularPromedio" type="Real" variable="">
+        <parameters>
+            <parameter name="arregloNotas" type="Real" array="False"/>
+            <parameter name="cantidad" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="suma" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="cantidad" direction="inc" step="1">
+                <assign variable="suma" expression="suma + arregloNotas[i - 1]"/>
+            </for>
+            <comment text="Unsupported shape: return&#10; expression=&quot;suma / cantidad&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
